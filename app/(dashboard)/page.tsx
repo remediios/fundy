@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <UserButton afterSignOutUrl="/" />
-      <p>This is an authenticated route</p>
+      <p>Dashboard</p>
     </div>
   );
 }
