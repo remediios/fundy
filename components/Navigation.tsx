@@ -56,13 +56,14 @@ const Navigation = () => {
             <MenuIcon className="size-4" />
           </Button>
         </SheetTrigger>
-        <SheetContent side="left" className="px-2">
+        <SheetContent side="left" className="w-[320px] px-2">
           <nav className="flex flex-col gap-y-2 pt-6">
             {routes.map((route, index) => (
               <Button
                 key={index}
                 variant={route.href === pathName ? 'secondary' : 'ghost'}
                 onClick={() => onClick(route.href)}
+                className="w-full justify-start"
               >
                 {route.label}
               </Button>
